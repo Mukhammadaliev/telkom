@@ -191,8 +191,8 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 111;
     width: 100%;
-    background-color: #fff;
   }
   .body--open {
     margin-top: 76px;
@@ -200,8 +200,9 @@ img {
   .site-header--open .navbar__list {
     flex-direction: column;
     display: flex;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 75px;
+    z-index: 11;
     left: 0;
     width: 100%;
     background-color: #fff;
