@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body class="body body--open">
+  <header class="site-header site-header--open">
+    <div class="container site-header--container">
+      <nav class="navbar">
+        <a href="#" class="logo"><img class="logo-img" src="img/logo.svg" alt=""></a>
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#" class="navbar__link">HOME</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">BERITA</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">ABOUT</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link navbar__link--pink">PPdp</a></li>
+        </ul>
+        <button class="menu-burger" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero--container">
+      <h2 class="hero__title">KAMI SANG JUARA</h2>
+      <p class="hero__sub-title">Sekolah Kejuruan terbaik di Indonesia Timur</p>
+      <a href="#" class="hero__link">INFORMASI PPDB</a>
+    </div>
+  </section>
+  <script>
+    var elModalToggler = document.querySelector('.menu-burger');
+      var elModal = document.querySelector('.site-header');
+      var elModalClose = document.querySelector('.site-header--open');
+      var elBody = document.querySelector('.body');
+
+      elModalToggler.addEventListener('click', function () {
+        elModal.classList.toggle('site-header--open');
+        elBody.classList.toggle('body--open')
+      });
+  </script>
+</body>
+</html>
